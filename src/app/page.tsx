@@ -24,6 +24,7 @@ import SkillsInDevelopment from '@/components/skills-in-development';
 import UpcomingCourses from '@/components/upcoming-courses';
 import AverageEmployeeScore from '@/components/average-employee-score';
 import AllEmployees from '@/components/all-employees';
+import { ToggleTheme } from '@/components/toggle-theme';
 
 export default function Dashboard() {
   const [data, setData] = useState<DashboardData | null>(null);
@@ -96,6 +97,7 @@ export default function Dashboard() {
               <div className="hidden items-center gap-2 md:ml-auto md:flex">
                 <Button variant="outline" size="sm">Create New Team</Button>
                 <Button size="sm">Add New Employee to a Team</Button>
+                <ToggleTheme />
               </div>
             </div>
             <div className="grid gap-4 md:grid-cols-[1fr_250px] lg:grid-cols-3 lg:gap-8">

@@ -2,7 +2,6 @@ import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 
 const AllEmployees = ({ teams }) => {
-    // Flatten the employees from all teams  
     const allEmployees = teams.flatMap(team => team.employees);
 
     return (
